@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template_login/home_list.dart';
+import 'package:flutter_template_login/ui/ui_helper.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,6 +9,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UI Login',
+      theme: ThemeData(
+        primaryColor: UIHelper.THEME_PRIMARY,
+        primaryColorLight: UIHelper.THEME_LIGHT,
+        primaryColorDark: UIHelper.THEME_DARK,
+      ),
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
@@ -30,6 +37,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: UIHelper.BACKGROUND_COLOR,
       key: _scaffoldKey,
       drawer: new Drawer(),
       appBar: _appBar,
@@ -64,7 +72,7 @@ class _HomeState extends State<Home> {
           return SizedBox();
         } else {
           return GridView(
-            padding: EdgeInsets.only(top: 0, left: 12, right: 12),
+            padding: EdgeInsets.only(top: 5, left: 12, right: 12),
             scrollDirection: Axis.vertical,
             children: List.generate(homeList.length, (index) {
               return HomeListView(
@@ -73,8 +81,7 @@ class _HomeState extends State<Home> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          homeList[index].navigateScreen,
+                      builder: (context) => homeList[index].navigateScreen,
                     ),
                   );
                 },
