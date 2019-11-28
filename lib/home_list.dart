@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_login/muz_login.dart';
+import 'package:flutter_template_login/screens/grape_login.dart';
+import 'package:flutter_template_login/screens/muz_login.dart';
+import 'package:flutter_template_login/screens/strawberry_login.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
 
 class HomeList {
@@ -15,6 +17,14 @@ class HomeList {
     HomeList(
       imagePath: UIHelper.muzPhoto,
       navigateScreen: MuzLogin(),
+    ),
+    HomeList(
+      imagePath: UIHelper.grapePhoto,
+      navigateScreen: GrapeLogin(),
+    ),
+    HomeList(
+      imagePath: UIHelper.strawberryPhoto,
+      navigateScreen: StrawberryLogin(),
     ),
   ];
 }

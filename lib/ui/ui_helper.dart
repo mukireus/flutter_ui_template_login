@@ -7,16 +7,23 @@ class UIHelper {
   static final String welcomeBack = "Welcome\nBack";
   static final String name = "Name";
   static final String email = "Email";
+  static final String username = "Username";
   static final String password = "Password";
+  static final String login = "Login";
   static final String signIn = "SIGN IN";
   static final String signUp = "SIGN UP";
+  static final String signInLower = "Sign In";
+  static final String signUpLower = "Sign Up";
   static final String forgetPassword = "Forget Password?";
   static final String loginSpotify = "LOG IN WITH SPOTIFY ";
   static final String emailRequired = "Email is required";
   static final String passwordRequired = "Password is required";
+  static final String dontHaveAnAccount = "Don't have an account?";
 
   // IMAGES
   static final String muzPhoto = "assets/images/muz_login.png";
+  static final String grapePhoto = "assets/images/grape_login.png";
+  static final String strawberryPhoto = "assets/images/strawberry_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
 
   // MUZ LOGIN COLORS
@@ -25,6 +32,14 @@ class UIHelper {
   static const Color MUZ_SHADOW = Color(0x70000000);
   static const Color MUZ_BUTTONSHADOW = Color(0x403C67F7);
   static const Color MUZ_TEXT_COLOR = Color(0xFF5A7BB5);
+
+  // MUZ LOGIN COLORS
+  static const Color STRAWBERRY_PRIMARY_COLOR = Color(0xFFFE0000);
+  static const Color STRAWBERRY_SECONDARY_COLOR = Color(0xFFC40000);
+  static const Color STRAWBERRY_SHADOW = Color(0x70000000);
+  static const Color STRAWBERRY_BUTTONSHADOW = Color(0x403C67F7);
+  static const Color STRAWBERRY_TEXT_COLOR = Color(0xFF5A7BB5);
+  static const Color STRAWBERRY_FOCUS_COLOR = Color(0xFFFF5A35);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
