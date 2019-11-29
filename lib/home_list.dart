@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template_login/screens/blueberry_login.dart';
 import 'package:flutter_template_login/screens/grape_login.dart';
 import 'package:flutter_template_login/screens/muz_login.dart';
 import 'package:flutter_template_login/screens/strawberry_login.dart';
@@ -25,6 +26,10 @@ class HomeList {
     HomeList(
       imagePath: UIHelper.strawberryPhoto,
       navigateScreen: StrawberryLogin(),
+    ),
+    HomeList(
+      imagePath: UIHelper.blueberryPhoto,
+      navigateScreen: BlueberryLogin(),
     ),
   ];
 }

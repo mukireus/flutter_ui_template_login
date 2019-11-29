@@ -105,9 +105,7 @@ class _GrapeLoginState extends State<GrapeLogin> {
                   color: Color(0xFF5ABD8C),
                   shape: RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(20.0)),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed("/HomePage");
-                  },
+                  onPressed: () {},
                   child: Text(
                     "Sign In",
                     style: TextStyle(fontSize: 15, color: Colors.white),

@@ -6,7 +6,7 @@ class UIHelper {
   static final String createAccount = "Create\nAccount";
   static final String welcomeBack = "Welcome\nBack";
   static final String name = "Name";
-  static final String email = "Email";
+  static final String email = "Email address";
   static final String username = "Username";
   static final String password = "Password";
   static final String login = "Login";
@@ -24,6 +24,7 @@ class UIHelper {
   static final String muzPhoto = "assets/images/muz_login.png";
   static final String grapePhoto = "assets/images/grape_login.png";
   static final String strawberryPhoto = "assets/images/strawberry_login.png";
+  static final String blueberryPhoto = "assets/images/blueberry.png";
   static final String noPhoto = "assets/images/no_photo.png";
 
   // MUZ LOGIN COLORS
@@ -33,13 +34,20 @@ class UIHelper {
   static const Color MUZ_BUTTONSHADOW = Color(0x403C67F7);
   static const Color MUZ_TEXT_COLOR = Color(0xFF5A7BB5);
 
-  // MUZ LOGIN COLORS
+  // STRAWBERRY LOGIN COLORS
   static const Color STRAWBERRY_PRIMARY_COLOR = Color(0xFFFE0000);
   static const Color STRAWBERRY_SECONDARY_COLOR = Color(0xFFC40000);
   static const Color STRAWBERRY_SHADOW = Color(0x70000000);
   static const Color STRAWBERRY_BUTTONSHADOW = Color(0x403C67F7);
   static const Color STRAWBERRY_TEXT_COLOR = Color(0xFF5A7BB5);
   static const Color STRAWBERRY_FOCUS_COLOR = Color(0xFFFF5A35);
+
+  // BLUEBERRY LOGIN COLORS
+  static const Color BLUEBERRY_BLUE = Color(0xFF4D7DF9);
+  static const Color BLUEBERRY_BLACK = Color(0xFF222222);
+  static const Color BLUEBERRY_ORANGE = Color(0xFFFFD164);
+  static const Color BLUEBERRY_GREY = Color(0xFFF7F9FA);
+  static const Color BLUEBERRY_TEXT_COLOR = Color(0xFFBBC3CE);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
