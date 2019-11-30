@@ -16,6 +16,7 @@ class UIHelper {
   static final String signUpLower = "Sign Up";
   static final String forgetPassword = "Forget Password?";
   static final String loginSpotify = "LOG IN WITH SPOTIFY ";
+  static final String loginFacebook = "Login with Facebook";
   static final String emailRequired = "Email is required";
   static final String passwordRequired = "Password is required";
   static final String dontHaveAnAccount = "Don't have an account?";
@@ -25,6 +26,7 @@ class UIHelper {
   static final String grapePhoto = "assets/images/grape_login.png";
   static final String strawberryPhoto = "assets/images/strawberry_login.png";
   static final String blueberryPhoto = "assets/images/blueberry.png";
+  static final String pomegranatePhoto = "assets/images/pomegranate_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
 
   // MUZ LOGIN COLORS
@@ -49,15 +51,22 @@ class UIHelper {
   static const Color BLUEBERRY_GREY = Color(0xFFF7F9FA);
   static const Color BLUEBERRY_TEXT_COLOR = Color(0xFFBBC3CE);
 
+  // POMEGRANATE LOGIN COLORS
+  static const Color POMEGRANATE_PRIMARY_COLOR = Color(0xFFFF5E7A);
+  static const Color POMEGRANATE_SHADOW_COLOR = Color(0x60FF5E7A);
+  static const Color POMEGRANATE_TEXT_COLOR = Color(0xFF6D7278);
+
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
   static const Color SPOTIFY_TEXT_COLOR = Color(0xFFF4F6FC);
   static const Color SPOTIFY_SHADOW = Color(0x401DB954);
   static const Color WHITE = Colors.white;
+  static const Color BLACK = Colors.black;
   static const Color THEME_PRIMARY = Color(0XFF575C79);
   static const Color THEME_LIGHT = Color(0XFF8489A8);
   static const Color THEME_DARK = Color(0XFF2D334D);
   static const Color BACKGROUND_COLOR = Color(0XFFAEB2D1);
+  static const Color FACEBOOK_COLOR = Color(0xFFF3B5998);
 
   // SPACE
   static dynamicHeight(double height) => ScreenUtil.instance.setHeight(height);
