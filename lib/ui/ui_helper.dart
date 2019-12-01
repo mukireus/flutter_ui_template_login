@@ -56,6 +56,12 @@ class UIHelper {
   static const Color POMEGRANATE_SHADOW_COLOR = Color(0x60FF5E7A);
   static const Color POMEGRANATE_TEXT_COLOR = Color(0xFF6D7278);
 
+  // APRICOT LOGIN COLORS
+  static const Color APRICOT_PRIMARY_COLOR = Color(0xFFFEB209);
+  static const Color APRICOT_SHADOW_COLOR = Color(0x60FF5E7A);
+  static const Color APRICOT_TEXT_COLOR = Color(0xFFC2C2C2);
+
+
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
   static const Color SPOTIFY_TEXT_COLOR = Color(0xFFF4F6FC);
