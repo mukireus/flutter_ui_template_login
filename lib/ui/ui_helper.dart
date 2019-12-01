@@ -27,6 +27,7 @@ class UIHelper {
   static final String strawberryPhoto = "assets/images/strawberry_login.png";
   static final String blueberryPhoto = "assets/images/blueberry.png";
   static final String pomegranatePhoto = "assets/images/pomegranate_login.png";
+  static final String apricotPhoto = "assets/images/apricot_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
 
   // MUZ LOGIN COLORS

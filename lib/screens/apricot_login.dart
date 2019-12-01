@@ -15,13 +15,15 @@ class _ApricotLoginState extends State<ApricotLogin> {
     return Scaffold(
       backgroundColor: UIHelper.APRICOT_PRIMARY_COLOR,
       //TODO ChangeListView
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          CustomShape(),
-        ],
-      ),
+      body: ListView(children: <Widget>[
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            CustomShape(),
+          ],
+        ),
+      ]),
     );
   }
 }

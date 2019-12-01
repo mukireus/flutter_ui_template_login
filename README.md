@@ -1,16 +1,23 @@
-# flutter_template_login
+# Flutter UI Login Screen
 
-A new Flutter project.
+This app was made for training. For arrangements and development ideas, please contact me.
 
-## Getting Started
+![Home](https://github.com/mukireus/flutter_ui_template_login/blob/master/images/home.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Updates
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**01 Dec 2019**
+* `Apricot` screen added.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**30 Nov 2019**
+* `Pomegranate` screen added.
+
+**29 Nov 2019**
+* `Blueberry` screen added.
+
+**28 Nov 2019**
+* `Project` added.
+* `Strawberry` screen added.
+* `Muz` screen added.
+* `Grape` screen added.

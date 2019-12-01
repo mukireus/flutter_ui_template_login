@@ -38,7 +38,7 @@ class HomeList {
       navigateScreen: PomegranateLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.noPhoto,
+      imagePath: UIHelper.apricotPhoto,
       navigateScreen: ApricotLogin(),
     ),
   ];
