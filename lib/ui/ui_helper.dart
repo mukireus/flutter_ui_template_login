@@ -10,10 +10,11 @@ class UIHelper {
   static final String username = "Username";
   static final String password = "Password";
   static final String login = "Login";
-  static final String signIn = "SIGN IN";
+  static final String signIn = "Sign In";
   static final String signUp = "SIGN UP";
   static final String signInLower = "Sign In";
   static final String signUpLower = "Sign Up";
+  static final String stayLoggedIn = "Stay Logged In";
   static final String forgetPassword = "Forget Password?";
   static final String loginSpotify = "LOG IN WITH SPOTIFY ";
   static final String loginFacebook = "Login with Facebook";
@@ -29,6 +30,7 @@ class UIHelper {
   static final String pomegranatePhoto = "assets/images/pomegranate_login.png";
   static final String apricotPhoto = "assets/images/apricot_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
+  static final String scooter = "assets/drawable/scooter.png";
 
   // MUZ LOGIN COLORS
   static const Color MUZ_PRIMARY_COLOR = Color(0XFF3C67F7);
@@ -62,6 +64,12 @@ class UIHelper {
   static const Color APRICOT_SHADOW_COLOR = Color(0x60FF5E7A);
   static const Color APRICOT_TEXT_COLOR = Color(0xFFC2C2C2);
 
+// FIG LOGIN COLORS
+  static const Color FIG_PRIMARY_COLOR = Color(0xFF182058);
+  static const Color FIG_SECONDARY_COLOR = Color(0xFFE03E3E);
+  static const Color FIG_SHADOW_COLOR = Color(0x60FF5E7A);
+  static const Color FIG_TEXT_COLOR = Color(0xFF9E9D9D);
+  static const Color FIG_FORGET_TEXT_COLOR = Color(0xFF38B5F2);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);

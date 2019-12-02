@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
+import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
 
 class ApricotLogin extends StatefulWidget {
   @override
@@ -45,7 +46,7 @@ class _CustomShapeState extends State<CustomShape> {
           child: CustomPaint(
             painter: CurvePainter(),
             child: Container(
-              height: UIHelper.dynamicHeight(1000.0),
+              height: UIHelper.dynamicHeight(1500.0),
               width: UIHelper.dynamicWidth(800.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,20 +63,15 @@ class _CustomShapeState extends State<CustomShape> {
                   ),
                   _textField,
                   _passwordField,
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Row(
-                      children: <Widget>[
-                        SizedBox(width: 200),
-                        Expanded(child: _forgetPasswordButton)
-                      ],
-                    ),
+                  new ForgetPasswordButton(
+                    color: UIHelper.APRICOT_TEXT_COLOR,
+                    rightPadding: 30,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 80.0),
                     child: Row(
                       children: <Widget>[
-                        SizedBox(width: 270),
+                        SizedBox(width: 250),
                         IconButton(
                           // TODO Control
                           icon: (!Platform.isIOS)
@@ -124,16 +120,6 @@ class _CustomShapeState extends State<CustomShape> {
             hintStyle: TextStyle(color: UIHelper.APRICOT_TEXT_COLOR),
           ),
         ),
-      );
-  Widget get _forgetPasswordButton => InkWell(
-        child: Text(
-          UIHelper.forgetPassword,
-          style: TextStyle(
-              color: UIHelper.APRICOT_TEXT_COLOR,
-              fontWeight: FontWeight.w700,
-              fontSize: 17),
-        ),
-        onTap: () {},
       );
 }
 

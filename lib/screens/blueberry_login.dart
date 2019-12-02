@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
+import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
 
 class BlueberryLogin extends StatefulWidget {
   @override
@@ -34,7 +35,10 @@ class _BlueberryLoginState extends State<BlueberryLogin> {
         children: <Widget>[
           _textField,
           _passwordField,
-          _forgetPasswordButton,
+          new ForgetPasswordButton(
+            color: UIHelper.BLUEBERRY_ORANGE,
+            rightPadding: 30,
+          ),
           _loginButton,
         ],
       ),
@@ -106,20 +110,6 @@ class _BlueberryLoginState extends State<BlueberryLogin> {
                 color: UIHelper.BLUEBERRY_TEXT_COLOR,
                 fontWeight: FontWeight.bold),
           ),
-        ),
-      );
-
-  Widget get _forgetPasswordButton => Padding(
-        padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-        child: InkWell(
-          child: Text(
-            UIHelper.forgetPassword,
-            style: TextStyle(
-                color: UIHelper.BLUEBERRY_ORANGE,
-                fontWeight: FontWeight.w700,
-                fontSize: 17),
-          ),
-          onTap: () {},
         ),
       );
 
