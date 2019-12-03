@@ -29,6 +29,7 @@ class UIHelper {
   static final String blueberryPhoto = "assets/images/blueberry.png";
   static final String pomegranatePhoto = "assets/images/pomegranate_login.png";
   static final String apricotPhoto = "assets/images/apricot_login.png";
+  static final String figPhoto = "assets/images/fig_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 
@@ -70,6 +71,10 @@ class UIHelper {
   static const Color FIG_SHADOW_COLOR = Color(0x60FF5E7A);
   static const Color FIG_TEXT_COLOR = Color(0xFF9E9D9D);
   static const Color FIG_FORGET_TEXT_COLOR = Color(0xFF38B5F2);
+
+// CHERRY LOGIN COLORS
+  static const Color CHERRY_PRIMARY_COLOR = Color(0xFF1566E0);
+  static const Color CHERRY_INPUT_TEXT_COLOR = Color(0xFF1EA5FF);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
