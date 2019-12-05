@@ -13,10 +13,9 @@ class _CherryLoginState extends State<CherryLogin> {
   Widget build(BuildContext context) {
     ScreenUtil.instance.init(context);
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       backgroundColor: UIHelper.WHITE,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: ListView(
         children: <Widget>[
           CustomPaint(
             painter: CurvePainter(),

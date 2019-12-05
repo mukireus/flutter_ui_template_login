@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
 import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
-import 'package:flutter_template_login/ui/widgets/textField_widget.dart';
 
 class FigLogin extends StatefulWidget {
   @override

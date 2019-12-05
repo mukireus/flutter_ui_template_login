@@ -4,11 +4,12 @@ import 'package:flutter_template_login/screens/blueberry_login.dart';
 import 'package:flutter_template_login/screens/cherry_login.dart';
 import 'package:flutter_template_login/screens/fig_login.dart';
 import 'package:flutter_template_login/screens/grape_login.dart';
-import 'package:flutter_template_login/screens/login.dart';
 import 'package:flutter_template_login/screens/muz_login.dart';
 import 'package:flutter_template_login/screens/pomegranate_login.dart';
 import 'package:flutter_template_login/screens/strawberry_login.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
+
+import 'screens/apple_login.dart';
 
 class HomeList {
   Widget navigateScreen;
@@ -49,8 +50,12 @@ class HomeList {
       navigateScreen: FigLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.noPhoto,
+      imagePath: UIHelper.cherryPhoto,
       navigateScreen: CherryLogin(),
+    ),
+    HomeList(
+      imagePath: UIHelper.noPhoto,
+      navigateScreen: AppleLogin(),
     )
   ];
 }

@@ -30,6 +30,7 @@ class UIHelper {
   static final String pomegranatePhoto = "assets/images/pomegranate_login.png";
   static final String apricotPhoto = "assets/images/apricot_login.png";
   static final String figPhoto = "assets/images/fig_login.png";
+  static final String cherryPhoto = "assets/images/cherry_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 
@@ -75,6 +76,10 @@ class UIHelper {
 // CHERRY LOGIN COLORS
   static const Color CHERRY_PRIMARY_COLOR = Color(0xFF1566E0);
   static const Color CHERRY_INPUT_TEXT_COLOR = Color(0xFF1EA5FF);
+
+// APPLE LOGIN COLORS
+  static const Color APPLE_GRADIENT_COLOR_ONE = Color(0xFFFBC79A);
+  static const Color APPLE_GRADIENT_COLOR_TWO = Color(0xFFDD5671);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
