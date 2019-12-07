@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
+import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
+import 'package:polygon_clipper/polygon_border.dart';
+import 'package:polygon_clipper/polygon_clipper.dart';
+import 'dart:ui' as ui;
 
 class AppleLogin extends StatefulWidget {
   @override
@@ -12,35 +16,71 @@ class _AppleLoginState extends State<AppleLogin> {
   Widget build(BuildContext context) {
     ScreenUtil.instance.init(context);
     return Scaffold(
+      floatingActionButton: floatingActionBottom,
+      resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
-          CustomPaint(
-            painter: CurvePainter(),
-            child: Container(height: double.infinity),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(30, 300, 30, 0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  UIHelper.login.toUpperCase(),
-                  style: TextStyle(
-                    color: UIHelper.WHITE,
-                    fontSize: UIHelper.dynamicSp(80),
-                  ),
+          Positioned(
+            left: 240,
+            bottom: 520,
+            child: Container(
+              height: 250,
+              child: ClipPolygon(
+                sides: 6,
+                borderRadius: 10.0, // Default 0.0 degrees
+                rotate: 0, // Default 0.0 degrees
+                child: Container(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                    colors: <Color>[
+                      UIHelper.APPLE_GRADIENT_COLOR_ONE,
+                      UIHelper.APPLE_GRADIENT_COLOR_TWO,
+                    ],
+                  )),
                 ),
-                SingleChildScrollView(
-                    child: Column(
-                  children: <Widget>[
-                    _textField(UIHelper.email, false),
-                    _textField(UIHelper.password, true),
-                  ],
-                )),
-              ],
+              ),
             ),
+          ),
+          LinearGradientMask(
+            child: CustomPaint(
+              painter: CurvePainter(),
+              child: Container(
+                height: double.infinity,
+              ),
+            ),
+          ),
+          ListView(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.fromLTRB(30, 300, 30, 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      UIHelper.login.toUpperCase(),
+                      style: TextStyle(
+                        color: UIHelper.WHITE,
+                        fontSize: UIHelper.dynamicSp(80),
+                      ),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        _textField(UIHelper.email, false),
+                        _textField(UIHelper.password, true),
+                        new ForgetPasswordButton(
+                          color: UIHelper.WHITE,
+                          rightPadding: 20,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -66,6 +106,21 @@ class _AppleLoginState extends State<AppleLogin> {
       );
 }
 
+Widget get floatingActionBottom => FloatingActionButton(
+      backgroundColor: UIHelper.WHITE,
+      shape: PolygonBorder(
+        sides: 5,
+        borderRadius: 5.0, // Default 0.0 degrees
+        border: BorderSide.none, // Default BorderSide.none
+      ),
+      child: Icon(
+        Icons.arrow_forward,
+        color: Colors.pink,
+        size: 20,
+      ),
+      onPressed: () {},
+    );
+
 class CurvePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
@@ -86,36 +141,46 @@ class CurvePainter extends CustomPainter {
   bool shouldRepaint(CustomPainter oldDelegate) => true;
 }
 
-class CurvePainterr extends CustomPainter {
+class DrawPoligon extends CustomClipper<Path> {
   @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = new Paint()..color = UIHelper.APPLE_GRADIENT_COLOR_TWO;
-    // create a path
-    var path = Path();
-    path.moveTo(0, size.height * 0.30);
-    path.quadraticBezierTo(size.width * 0.23, size.height * 0.14,
-        size.width * 0.45, size.height * 0.25);
-    path.quadraticBezierTo(
-        size.width * 0.75, size.height * 0.39, size.width, size.height * 0.53);
-    path.lineTo(size.width, size.height);
-    path.lineTo(0, size.height);
-    canvas.drawPath(path, paint);
+  Path getClip(Size size) {
+    final path = Path();
+    path.lineTo(0, 0);
+    path.lineTo(size.width, 0);
+    path.lineTo(size.width, size.height * 0.8);
+    path.lineTo(size.width * 0.8, size.height);
+    path.lineTo(size.width * 0.2, size.height);
+    path.lineTo(0, size.height * 0.8);
+    path.lineTo(0, 0);
+
+    path.close();
+    return path;
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) => true;
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
 
-final Gradient gradient = new LinearGradient(
-  colors: <Color>[
-    UIHelper.APPLE_GRADIENT_COLOR_ONE,
-    UIHelper.APPLE_GRADIENT_COLOR_TWO,
-  ],
-  stops: [
-    0.0,
-    0.5,
-    0.7,
-    0.9,
-    1.0,
-  ],
-);
+class LinearGradientMask extends StatelessWidget {
+  LinearGradientMask({this.child});
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return ShaderMask(
+      blendMode: BlendMode.srcIn,
+      shaderCallback: (bounds) {
+        return LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: <Color>[
+            UIHelper.APPLE_GRADIENT_COLOR_ONE,
+            UIHelper.APPLE_GRADIENT_COLOR_TWO,
+          ],
+          tileMode: TileMode.mirror,
+        ).createShader(bounds);
+      },
+      child: child,
+    );
+  }
+}

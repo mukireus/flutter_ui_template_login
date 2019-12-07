@@ -15,34 +15,39 @@ class _CherryLoginState extends State<CherryLogin> {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       backgroundColor: UIHelper.WHITE,
-      body: ListView(
-        children: <Widget>[
-          CustomPaint(
-            painter: CurvePainter(),
-            child: Container(
-              height: UIHelper.dynamicHeight(500.0),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            CustomPaint(
+              painter: CurvePainter(),
+              child: Container(
+                height: UIHelper.dynamicHeight(500.0),
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
-            child: Column(
-              children: <Widget>[
-                _textField(UIHelper.email, false,
-                    Icon(Icons.email, color: UIHelper.CHERRY_PRIMARY_COLOR)),
-                _textField(UIHelper.password, true,
-                    Icon(Icons.vpn_key, color: UIHelper.CHERRY_PRIMARY_COLOR)),
-                _loginButton,
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: new ForgetPasswordButton(
-                    color: UIHelper.CHERRY_PRIMARY_COLOR,
-                    rightPadding: 0,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
+              child: Column(
+                children: <Widget>[
+                  _textField(UIHelper.email, false,
+                      Icon(Icons.email, color: UIHelper.CHERRY_PRIMARY_COLOR)),
+                  _textField(
+                      UIHelper.password,
+                      true,
+                      Icon(Icons.vpn_key,
+                          color: UIHelper.CHERRY_PRIMARY_COLOR)),
+                  _loginButton,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: new ForgetPasswordButton(
+                      color: UIHelper.CHERRY_PRIMARY_COLOR,
+                      rightPadding: 0,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

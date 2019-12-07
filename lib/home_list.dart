@@ -54,7 +54,7 @@ class HomeList {
       navigateScreen: CherryLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.noPhoto,
+      imagePath: UIHelper.applePhoto,
       navigateScreen: AppleLogin(),
     )
   ];

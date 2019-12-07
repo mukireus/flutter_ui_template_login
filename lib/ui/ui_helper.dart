@@ -31,6 +31,7 @@ class UIHelper {
   static final String apricotPhoto = "assets/images/apricot_login.png";
   static final String figPhoto = "assets/images/fig_login.png";
   static final String cherryPhoto = "assets/images/cherry_login.png";
+  static final String applePhoto = "assets/images/apple_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 

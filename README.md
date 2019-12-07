@@ -2,10 +2,24 @@
 
 This app was made for training. For arrangements and development ideas, please contact me.
 
-![Home](https://github.com/mukireus/flutter_ui_template_login/blob/master/images/home.png)
+![Home](https://github.com/mukireus/flutter_ui_template_login/blob/master/images/home3.png)
 
 
 ### Updates
+
+**07 Dec 2019**
+* `Apple` screen modified.
+* `README.md` file modified.
+
+**05 Dec 2019**
+* `Apple` screen added.
+
+**03 Dec 2019**
+* `Cherry` screen added.
+
+**02 Dec 2019**
+* `Fig` screen added.
+* `Clean Code`
 
 **01 Dec 2019**
 * `Apricot` screen added.
