@@ -6,14 +6,15 @@ class UIHelper {
   static final String createAccount = "Create\nAccount";
   static final String welcomeBack = "Welcome\nBack";
   static final String name = "Name";
+  static final String hello = "Hello";
   static final String email = "Email address";
   static final String username = "Username";
   static final String password = "Password";
   static final String login = "Login";
   static final String signIn = "Sign In";
   static final String signUp = "SIGN UP";
-  static final String signInLower = "Sign In";
-  static final String signUpLower = "Sign Up";
+  static final String signInLower = "Sign in";
+  static final String signUpLower = "Sign up";
   static final String stayLoggedIn = "Stay Logged In";
   static final String forgetPassword = "Forget Password?";
   static final String loginSpotify = "LOG IN WITH SPOTIFY ";
@@ -32,6 +33,7 @@ class UIHelper {
   static final String figPhoto = "assets/images/fig_login.png";
   static final String cherryPhoto = "assets/images/cherry_login.png";
   static final String applePhoto = "assets/images/apple_login.png";
+  static final String watermelonPhoto = "assets/images/watermelon_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 
@@ -67,20 +69,24 @@ class UIHelper {
   static const Color APRICOT_SHADOW_COLOR = Color(0x60FF5E7A);
   static const Color APRICOT_TEXT_COLOR = Color(0xFFC2C2C2);
 
-// FIG LOGIN COLORS
+  // FIG LOGIN COLORS
   static const Color FIG_PRIMARY_COLOR = Color(0xFF182058);
   static const Color FIG_SECONDARY_COLOR = Color(0xFFE03E3E);
   static const Color FIG_SHADOW_COLOR = Color(0x60FF5E7A);
   static const Color FIG_TEXT_COLOR = Color(0xFF9E9D9D);
   static const Color FIG_FORGET_TEXT_COLOR = Color(0xFF38B5F2);
 
-// CHERRY LOGIN COLORS
+  // CHERRY LOGIN COLORS
   static const Color CHERRY_PRIMARY_COLOR = Color(0xFF1566E0);
   static const Color CHERRY_INPUT_TEXT_COLOR = Color(0xFF1EA5FF);
 
-// APPLE LOGIN COLORS
+  // APPLE LOGIN COLORS
   static const Color APPLE_GRADIENT_COLOR_ONE = Color(0xFFFBC79A);
   static const Color APPLE_GRADIENT_COLOR_TWO = Color(0xFFDD5671);
+
+  // WATERMELON LOGIN COLORS
+  static const Color WATERMELON_PRIMARY_COLOR = Color(0xFFC72C41);
+  static const Color WATERMELON_SHADOW = Color(0x40C72C41);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);

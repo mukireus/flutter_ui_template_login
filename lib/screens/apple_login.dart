@@ -4,7 +4,6 @@ import 'package:flutter_template_login/ui/ui_helper.dart';
 import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
 import 'package:polygon_clipper/polygon_border.dart';
 import 'package:polygon_clipper/polygon_clipper.dart';
-import 'dart:ui' as ui;
 
 class AppleLogin extends StatefulWidget {
   @override
