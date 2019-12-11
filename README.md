@@ -7,6 +7,12 @@ This app was made for training. For arrangements and development ideas, please c
 
 ### Updates
 
+**11 Dec 2019**
+* `Pineapple` screen added.
+
+**10 Dec 2019**
+* `Watermelon` screen added.
+
 **07 Dec 2019**
 * `Apple` screen modified.
 * `README.md` file modified.

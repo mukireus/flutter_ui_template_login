@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
-import 'package:flutter_template_login/ui/widgets/button_widgets.dart';
 import 'package:flutter_template_login/ui/widgets/forgetPassButton_widget.dart';
 
 class WatermelonLogin extends StatefulWidget {

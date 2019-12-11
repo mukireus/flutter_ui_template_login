@@ -34,6 +34,7 @@ class UIHelper {
   static final String cherryPhoto = "assets/images/cherry_login.png";
   static final String applePhoto = "assets/images/apple_login.png";
   static final String watermelonPhoto = "assets/images/watermelon_login.png";
+  static final String pineapplePhoto = "assets/images/pineapple_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 
@@ -87,6 +88,10 @@ class UIHelper {
   // WATERMELON LOGIN COLORS
   static const Color WATERMELON_PRIMARY_COLOR = Color(0xFFC72C41);
   static const Color WATERMELON_SHADOW = Color(0x40C72C41);
+
+  static const Color PINEAPPLE_PRIMARY_COLOR = Color(0xFF71CEEB);
+  static const Color PINEAPPLE_SECONDARY_COLOR = Color(0xFFF1F0F2);
+  static const Color PINEAPPLE_SHADOW = Color(0x30000000);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
