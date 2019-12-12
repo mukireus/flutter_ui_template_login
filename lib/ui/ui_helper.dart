@@ -22,7 +22,7 @@ class UIHelper {
   static final String emailRequired = "Email is required";
   static final String passwordRequired = "Password is required";
   static final String dontHaveAnAccount = "Don't have an account?";
-  static final String signInToYourAccount = "Sign in to your Account";
+  static final String signAccount = "Sign in to your Account";
 
   // IMAGES
   static final String muzPhoto = "assets/images/muz_login.png";
