@@ -5,6 +5,7 @@ import 'package:flutter_template_login/screens/cherry_login.dart';
 import 'package:flutter_template_login/screens/fig_login.dart';
 import 'package:flutter_template_login/screens/grape_login.dart';
 import 'package:flutter_template_login/screens/muz_login.dart';
+import 'package:flutter_template_login/screens/paer_login.dart';
 import 'package:flutter_template_login/screens/pineapple_dart.dart';
 import 'package:flutter_template_login/screens/pomegranate_login.dart';
 import 'package:flutter_template_login/screens/strawberry_login.dart';
@@ -64,8 +65,12 @@ class HomeList {
       navigateScreen: WatermelonLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.pineapplePhoto,
+      imagePath: UIHelper.noPhoto,
       navigateScreen: PineAppleLogin(),
-    )
+    ),
+    HomeList(
+      imagePath: UIHelper.noPhoto,
+      navigateScreen: PearLogin(),
+    ),
   ];
 }

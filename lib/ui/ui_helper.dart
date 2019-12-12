@@ -22,6 +22,7 @@ class UIHelper {
   static final String emailRequired = "Email is required";
   static final String passwordRequired = "Password is required";
   static final String dontHaveAnAccount = "Don't have an account?";
+  static final String signInToYourAccount = "Sign in to your Account";
 
   // IMAGES
   static final String muzPhoto = "assets/images/muz_login.png";
@@ -34,7 +35,7 @@ class UIHelper {
   static final String cherryPhoto = "assets/images/cherry_login.png";
   static final String applePhoto = "assets/images/apple_login.png";
   static final String watermelonPhoto = "assets/images/watermelon_login.png";
-  static final String pineapplePhoto = "assets/images/pineapple_login.png";
+  //static final String pineapplePhoto = "assets/images/pineapple_login.png";
   static final String noPhoto = "assets/images/no_photo.png";
   static final String scooter = "assets/drawable/scooter.png";
 
@@ -89,9 +90,13 @@ class UIHelper {
   static const Color WATERMELON_PRIMARY_COLOR = Color(0xFFC72C41);
   static const Color WATERMELON_SHADOW = Color(0x40C72C41);
 
+  // PINEAPPLE LOGIN COLOR
   static const Color PINEAPPLE_PRIMARY_COLOR = Color(0xFF71CEEB);
   static const Color PINEAPPLE_SECONDARY_COLOR = Color(0xFFF1F0F2);
   static const Color PINEAPPLE_SHADOW = Color(0x30000000);
+
+  // PEAR LOGIN COLOR
+  static const Color PEAR_PRIMARY_COLOR = Color(0xFF4873FF);
 
   // GLOBAL COLORS
   static const Color SPOTIFY_COLOR = Color(0xFF1DB954);
