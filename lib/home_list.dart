@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template_login/screens/apricot_login.dart';
+import 'package:flutter_template_login/screens/avocados_login.dart';
 import 'package:flutter_template_login/screens/blueberry_login.dart';
 import 'package:flutter_template_login/screens/cherry_login.dart';
 import 'package:flutter_template_login/screens/fig_login.dart';
@@ -65,12 +66,16 @@ class HomeList {
       navigateScreen: WatermelonLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.noPhoto,
+      imagePath: UIHelper.pineapplePhoto,
       navigateScreen: PineAppleLogin(),
     ),
     HomeList(
-      imagePath: UIHelper.noPhoto,
+      imagePath: UIHelper.pearPhoto,
       navigateScreen: PearLogin(),
     ),
+    HomeList(
+      imagePath: UIHelper.noPhoto,
+      navigateScreen: AvocadosLogin(),
+    )
   ];
 }

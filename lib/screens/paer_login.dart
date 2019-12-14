@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_template_login/ui/ui_helper.dart';
 
 class PearLogin extends StatefulWidget {
@@ -9,6 +10,7 @@ class PearLogin extends StatefulWidget {
 class _PearLoginState extends State<PearLogin> {
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.instance.init(context);
     return Scaffold(
       backgroundColor: UIHelper.PEAR_PRIMARY_COLOR,
       body: SingleChildScrollView(
